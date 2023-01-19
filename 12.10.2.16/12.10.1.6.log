@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2023.1.3)  19 JAN 2023 21:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2023.1.3)  19 JAN 2023 20:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**12.10.1.16.tex
-(./12.10.1.16.tex
+**12.10.1.6.tex
+(./12.10.1.6.tex
 LaTeX2e <2020-02-02> patch level 2
 L3 programming layer <2020-02-14>
 (/usr/share/texlive/texmf-dist/tex/latex/IEEEtran/IEEEtran.cls
@@ -1418,19 +1418,20 @@ Package chngcntr Info: \counterwithout already defined.
 LaTeX Warning: Unused global option(s):
     [A4].
 
-(./12.10.1.16.aux)
-\openout1 = `12.10.1.16.aux'.
+No file 12.10.1.6.aux.
+\openout1 = `12.10.1.6.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 86.
 LaTeX Font Info:    Trying to load font information for OML+txmi on input line 
 86.
- (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omltxmi.fd
+(/usr/share/texlive/texmf-dist/tex/latex/txfonts/omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    ... okay on input line 86.
 LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 86.
 LaTeX Font Info:    Trying to load font information for OMS+txsy on input line 
 86.
+
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omstxsy.fd
 File: omstxsy.fd 2000/12/15 v3.1
 )
@@ -1564,10 +1565,8 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 86.
 LaTeX Info: Redefining \pageref on input line 86.
 LaTeX Info: Redefining \nameref on input line 86.
-
-(./12.10.1.16.out) (./12.10.1.16.out)
 \@outlinefile=\write4
-\openout4 = `12.10.1.16.out'.
+\openout4 = `12.10.1.6.out'.
 
 \c@lstlisting=\count374
 \c@theorem=\count375
@@ -1605,38 +1604,53 @@ LaTeX Font Info:    Trying to load font information for U+txsyc on input line 2
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
-) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+)
+** WARNING: \and is valid only when in conference or peerreviewca
+modes (line 205).
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--207
+
+ []
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 213.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 213.
- (./12.10.1.16.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 213.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 213.
-Package rerunfilecheck Info: File `12.10.1.16.out' has not changed.
-(rerunfilecheck)             Checksum: 872ABE65B1ED792BBEA39B37ED008FFC;44.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 213.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 211.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 211.
+ (./12.10.1.6.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 211.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 211.
+
+
+Package rerunfilecheck Warning: File `12.10.1.6.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `12.10.1.6.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  872ABE65B1ED792BBEA39B37ED008FFC;44.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 211.
  ) 
 Here is how much of TeX's memory you used:
- 39740 strings out of 481239
- 900766 string characters out of 5920378
- 1295701 words of memory out of 5000000
- 54199 multiletter control sequences out of 15000+600000
+ 39732 strings out of 481239
+ 900654 string characters out of 5920378
+ 1295613 words of memory out of 5000000
+ 54197 multiletter control sequences out of 15000+600000
  591778 words of font info for 146 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 60i,13n,91p,483b,313s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,13n,91p,482b,315s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/txfonts/txex.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /public/txfonts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/u
 tmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on 12.10.1.16.pdf (1 page, 34901 bytes).
+Output written on 12.10.1.6.pdf (1 page, 34640 bytes).
 PDF statistics:
- 73 PDF objects out of 1000 (max. 8388607)
- 47 compressed objects within 1 object stream
+ 69 PDF objects out of 1000 (max. 8388607)
+ 43 compressed objects within 1 object stream
  6 named destinations out of 1000 (max. 500000)
- 117 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 109 words of extra memory for PDF output out of 10000 (max. 10000000)
 
