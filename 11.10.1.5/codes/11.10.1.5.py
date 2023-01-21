@@ -18,6 +18,8 @@ B = np.array([[8.0],[0.0]])
 O = np.array([[0.0],[0.0]])
 C = line_gen(P, B)
 Q = (P + B)/2
+print('THE DIRECTION VECTOR IS IS GIVEN BY:',Q)
+print('THE SLOPE IS:',Q[1]/Q[0])
 D = line_gen(Q, O)
 plt.text(P[0][0], P[1][0],'P')  
 plt.text(B[0][0],B[1][0], 'B')  
