@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2023.1.3)  20 JAN 2023 17:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2023.1.3)  22 JAN 2023 17:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1418,20 +1418,19 @@ Package chngcntr Info: \counterwithout already defined.
 LaTeX Warning: Unused global option(s):
     [A4].
 
-No file 12.10.3.12.aux.
+(./12.10.3.12.aux)
 \openout1 = `12.10.3.12.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 86.
 LaTeX Font Info:    Trying to load font information for OML+txmi on input line 
 86.
-(/usr/share/texlive/texmf-dist/tex/latex/txfonts/omltxmi.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    ... okay on input line 86.
 LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 86.
 LaTeX Font Info:    Trying to load font information for OMS+txsy on input line 
 86.
-
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omstxsy.fd
 File: omstxsy.fd 2000/12/15 v3.1
 )
@@ -1565,6 +1564,8 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 86.
 LaTeX Info: Redefining \pageref on input line 86.
 LaTeX Info: Redefining \nameref on input line 86.
+
+(./12.10.3.12.out) (./12.10.3.12.out)
 \@outlinefile=\write4
 \openout4 = `12.10.3.12.out'.
 
@@ -1604,37 +1605,25 @@ LaTeX Font Info:    Trying to load font information for U+txsyc on input line 2
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
-)
-Underfull \hbox (badness 10000) in paragraph at lines 202--204
-
- []
-
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 226.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 226.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 227.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 227.
  (./12.10.3.12.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 226.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 226.
-
-
-Package rerunfilecheck Warning: File `12.10.3.12.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `12.10.3.12.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  872ABE65B1ED792BBEA39B37ED008FFC;44.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 226.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 227.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 227.
+Package rerunfilecheck Info: File `12.10.3.12.out' has not changed.
+(rerunfilecheck)             Checksum: 872ABE65B1ED792BBEA39B37ED008FFC;44.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 227.
  ) 
 Here is how much of TeX's memory you used:
- 39743 strings out of 481239
- 900822 string characters out of 5920378
- 1301616 words of memory out of 5000000
- 54197 multiletter control sequences out of 15000+600000
+ 39750 strings out of 481239
+ 900910 string characters out of 5920378
+ 1301701 words of memory out of 5000000
+ 54199 multiletter control sequences out of 15000+600000
  591778 words of font info for 146 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  60i,13n,91p,483b,315s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1645,10 +1634,10 @@ t/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type
 onts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on 12.10.3.12.pdf (1 page, 37141 bytes).
+Output written on 12.10.3.12.pdf (1 page, 37121 bytes).
 PDF statistics:
- 87 PDF objects out of 1000 (max. 8388607)
- 60 compressed objects within 1 object stream
- 17 named destinations out of 1000 (max. 500000)
- 109 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 90 PDF objects out of 1000 (max. 8388607)
+ 63 compressed objects within 1 object stream
+ 16 named destinations out of 1000 (max. 500000)
+ 117 words of extra memory for PDF output out of 10000 (max. 10000000)
 

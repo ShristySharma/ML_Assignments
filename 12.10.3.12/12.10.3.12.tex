@@ -200,28 +200,29 @@ columns=fullflexible
 
 \section{PROBLEM 1}
 1. If, $\vec{a}.\vec{a} = 0$ and  $\vec{a}.\vec{b} = 0 $ then what can be concluded about the vector $\vec{b}$?
-\\SOLUTION:\\
+\\SOLUTION:
 \begin{align}
-\vec{a}.\vec{a} = 0  (Given)\\
+\vec{a} ^\top \vec{a} = 0  (Given)\\
 \norm {\vec{a}} \norm {\vec{a}} cos\ 0 = 0 \\
 \norm {\vec{a}}^2 \ cos\ 0 = 0 \\
-\norm {\vec{a}}^2 . 1 = 0 \\
-\norm {\vec{a}}^2 = 0 \\
+(\norm {\vec{a}}^2 )^\top 1 = 0 \\
+\norm {\vec{a}}^2 = 0 
 \norm {\vec{a}} = 0
 \end{align}
 Therefore, it can be concluded that $\vec{a}=0$
 \begin{align}
-\vec{a}.\vec{b} = 0  (Given)\\
-0.\norm {\vec{b}} = 0 
+\vec{a}^\top\vec{b} = 0  (Given)\\
+0\norm {\vec{b}} = 0 
 \end{align}
 which is true for any vector $\vec{b}$ 
+Since, 
 \begin{align}
-Since, \vec{a}=0 \\ \vec{b}=0 \\  \vec{a}.\vec{a} = 0 \\ \vec{a}.\vec{b} = 0   
+\vec{a}=0 \\ \vec{b}=0 \\  \vec{a} ^\top \vec{a} = 0 \\ \vec{a}^\top\vec{b} = 0   
 \end{align}
 $\vec{b} $ can be any vector. 
 \begin{align}
 Let, \vec{b}= \myvec{8\\-5\\2} \\
-\vec{a}.\vec{b} = \myvec{0\\0\\0}.\myvec{8\\-5\\2}=\myvec{0\\0\\0}
+\vec{a}^\top\vec{b} = \myvec{0\\0\\0}^\top \myvec{8\\-5\\2}=\myvec{0\\0\\0}
 \end{align}
 \end{document}
 
