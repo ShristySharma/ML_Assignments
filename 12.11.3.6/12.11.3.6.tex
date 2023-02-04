@@ -1,4 +1,4 @@
-\documentclass[A4,10pt,twocolumn]{IEEEtran}
+\documentclass[A4,11pt,twocolumn]{IEEEtran}
 %
 \usepackage{setspace}
 \usepackage{gensymb}
@@ -205,31 +205,25 @@ columns=fullflexible
 \item $\vec{A}= \myvec{1\\1\\0}, \vec{B}= \myvec{1\\2\\1}, \vec{C}= \myvec{– 2\\2\\-1}$
 \end{enumerate}
 \section{Solution for 1}
-Vector equation is given by,
+Equation of plane is given by,
 \begin{align}
-(\vec{r}-\vec{A})^\top  (\vec{B}-\vec{A}) \times   (\vec{C}-\vec{A}) =0 \\
-\brak{\vec{r}-\myvec{ 1 \\ 1\\ -1}}^\top\brak{\myvec{6\\4\\– 5}-\myvec{1\\1\\– 1}} \times  \brak{\myvec{– 4\\– 2\\3} - \myvec{1\\1\\– 1}} =0\\
-{\myvec{\vec{r}-1 & \vec{r}-1 & \vec{r}+1}}\brak{\myvec{5\\3\\– 4} \times \myvec{-5\\-3\\4}} =0\\
-{\myvec{\vec{r}-1 & \vec{r}-1 & \vec{r}+1}} \myvec{0\\0\\0}=0
+m^\top \vec{x} = c\\
+\implies \myvec{1&1&-1\\6&4&-5\\-4&-2&3}^\top \myvec{x\\y\\z}=\myvec{1\\-25\\9}\\
+\implies \myvec{1&6&-4\\ 1&4&-2\\ -1&-5&3} \myvec{x\\y\\z} = \myvec{1\\-25\\9}
 \end{align}
-$\implies $ The three points are collinear\\
-Since, the above equation is satisfied for all values of $\vec{r}.$\\
-$\therefore$ There will be infinite planes passing through the given 3 collinear points.
 \begin{figure}[h!]
   \centering
    \includegraphics[width=\columnwidth]{figs/collinear_points.png}
     \caption{The figure shows that the given points are collinear}
      \label{fig:1}
      \end{figure}
-\section{Solution for 2}  
-Vector equation is given by,
+\section{Solution for 2}
+Equation of plane is given by,
 \begin{align}
-(\vec{r}-\vec{A})^\top  (\vec{B}-\vec{A}) \times   (\vec{C}-\vec{A}) =0 \\
-\brak{\vec{r}-\myvec{1\\1\\0}}^\top\brak{\myvec{1\\2\\1}-\myvec{1\\1\\0}} \times  \brak{\myvec{– 2\\2\\-1} - \myvec{1\\1\\0}} =0\\
-{\myvec{\vec{r}-1 & \vec{r}-1 & \vec{r}}}\brak{\myvec{0\\1\\1} \times \myvec{-3\\1\\-1}} =0\\
-{\myvec{\vec{r}-1 & \vec{r}-1 & \vec{r}+1}} \myvec{-2\\-3\\3}=0
+m^\top \vec{x} = c\\
+\implies \myvec{1&1&0\\1&2&1\\-2&2&-1}^\top \myvec{x\\y\\z}=\myvec{0\\5\\-5}\\
+\implies \myvec{1&1&-2\\ 1&2&2\\ 0&1&-1} \myvec{x\\y\\z} = \myvec{0\\5\\-5}
 \end{align}
-This is the Cartesian equation of the required plane.
 \begin{figure}[h!]
   \centering
    \includegraphics[width=\columnwidth]{figs/plane_b.png}
