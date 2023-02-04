@@ -21,3 +21,10 @@ d1 = [-3, -20/7, 2]
 p2 = [1, 2, 3]
 d2 = [-30/7, 1, -5]
 draw_lines(p1, d1, p2, d2)
+
+#verifying the inner product
+#u = np.array([-3, -20/7, 2])
+#v = np.array([-30/7, 1, -5])
+
+result = np.dot(d1,d2)
+print(result)
