@@ -201,9 +201,19 @@ columns=fullflexible
 \section{PROBLEM 1}
 1. Find the equation of the plane with an intercept 3 on the Y-axis and parallel to ZOX- Plane.\\
 SOLUTION:\\
-Equation of the ZOX plane is y = 0\\
-any plane parallel to it is of the form y = a\\
+Any plane parallel to ZOX is of the form y = a\\
 since the y- intercept of the plane is 3.\\
-$\therefore$ a=3\\
+Equation of the plane is given by,
+\begin{align}
+m^\top \vec{x} = c\\
+\myvec{0\\1\\0}^\top \myvec{x\\y\\z}=3\\
+\myvec{0&1&0} \myvec{x\\y\\z}=3
+\end{align}
 Thus, the equation of the required plane is y = 3
+\begin{figure}[h!]
+  \centering
+   \includegraphics[width=\columnwidth]{figs/plane1.png}
+    \caption{plane with intercept 3 on Y-axis}
+     \label{fig:1}
+     \end{figure}  
 \end{document}
