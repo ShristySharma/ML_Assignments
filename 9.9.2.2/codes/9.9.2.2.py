@@ -14,14 +14,18 @@ def line_gen(A,B):
   return x_AB
 
 #Points
-A= np.array([[0],[4]])
-B= np.array([[2],[4]])
+A= np.array([[0],[-4]])
+B= np.array([[2],[-4]])
 C= np.array([[2],[0]])
 D= np.array([[0],[0]])
 E=(A+B)/2
 F=(B+C)/2
 G=(D+C)/2
 H=(A+D)/2
+print('E=',E)
+print('F=',F)
+print('G=',G)
+print('H=',H)
 #Generate lines
 l_AB = line_gen(A,B)
 l_BC = line_gen(B,C)
@@ -65,10 +69,14 @@ plt.savefig('parallelogram1.png')
 def cross_product_2d(v1, v2):
     return v1[0] * v2[1] - v1[1] * v2[0]
 DA=D-A
+print('DA=',DA)
 DC=D-C
+print('DC=',DC)
 ABCD= cross_product_2d(DA, DC)
 print("\n AREA OF ABCD..\n", ABCD)
 GH=G-H
 GF=G-F
-EFGH= cross_product_2d( GH,GF)
+print('GH=',GH)
+print('GF=',GF)
+EFGH= cross_product_2d(GH,GF)
 print("\n AREA OF EFGH..\n",EFGH)
