@@ -208,8 +208,8 @@ columns=fullflexible
 Equation of plane is given by,
 \begin{align}
 \vec{n}^\top \vec{x} = c\\
-\implies \myvec{1&1&-1\\6&4&-5\\-4&-2&3}^\top \myvec{x\\y\\z}=\myvec{1\\1\\1}\\
-\implies \myvec{1&6&-4\\ 1&4&-2\\ -1&-5&3} \myvec{x\\y\\z} = \myvec{1\\1\\1}\\
+\implies \myvec{1&1&-1\\6&4&-5\\-4&-2&3}^\top \vec{x}=\myvec{1\\1\\1}\\
+\implies \myvec{1&6&-4\\ 1&4&-2\\ -1&-5&3} \vec{x} = \myvec{1\\1\\1}\\
 \end{align}
 the augmented matrix is given by,
 \begin{align}
@@ -221,6 +221,10 @@ the augmented matrix is given by,
 \end{align}
 Since, all the elements in one of the row is 0. Therefore, there will be no solution.
 This signifies that the given points are collinear.
+The direction vector of the line will be,
+\begin{align}
+\vec{B}-\vec{C} = \myvec{10\\6\\-7}
+\end{align}
 \begin{figure}[h!]
   \centering
    \includegraphics[width=\columnwidth]{figs/collinear_points.png}
@@ -231,8 +235,8 @@ This signifies that the given points are collinear.
 Equation of plane is given by,
 \begin{align}
 \vec{n}^\top \vec{x} = c\\
-\implies \myvec{1&1&0\\1&2&1\\-2&2&-1}^\top \myvec{x\\y\\z}=\myvec{1\\1\\1}\\
-\implies \myvec{1&1&-2\\1&2&2\\0&1&-1} \myvec{x\\y\\z}=\myvec{1\\1\\1}\\
+\implies \myvec{1&1&0\\1&2&1\\-2&2&-1}^\top \vec{x}=\myvec{1\\1\\1}\\
+\implies \myvec{1&1&-2\\1&2&2\\0&1&-1} \vec{x}=\myvec{1\\1\\1}\\
 \end{align}
 the augmented matrix is given by,
 \begin{align}
