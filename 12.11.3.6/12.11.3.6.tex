@@ -1,8 +1,8 @@
-\documentclass[Journal,14pt,twocolumn]{IEEEtran}
+\documentclass[A4,10pt,twocolumn]{IEEEtran}
 %
 \usepackage{setspace}
 \usepackage{gensymb}
-%\doublespacing
+\doublespacing
 \singlespacing
 
 %\usepackage{graphicx}
@@ -58,7 +58,7 @@
 %\usepackage{wasysym}
 %\newcounter{MYtempeqncnt}
 \DeclareMathOperator*{\Res}{Res}
-%\renewcommand{\baselinestretch}{2}
+\renewcommand{\baselinestretch}{2}
 \renewcommand\thesection{\arabic{section}}
 \renewcommand\thesubsection{\thesection.\arabic{subsection}}
 \renewcommand\thesubsubsection{\thesubsection.\arabic{subsubsection}}
@@ -84,9 +84,6 @@ columns=fullflexible
 %}
 
 \begin{document}
-%
-
-
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem{problem}{Problem}
 \newtheorem{proposition}{Proposition}[section]
@@ -103,9 +100,7 @@ columns=fullflexible
 \newcommand{\define}{\stackrel{\triangle}{=}}
 
 \bibliographystyle{IEEEtran}
-%\bibliographystyle{ieeetr}
-
-
+\bibliographystyle{ieeetr}
 \providecommand{\mbf}{\mathbf}
 \providecommand{\pr}[1]{\ensuremath{\Pr\left(#1\right)}}
 \providecommand{\qfunc}[1]{\ensuremath{Q\left(#1\right)}}
@@ -160,7 +155,7 @@ columns=fullflexible
      \def\topbox#1{\raisebox{-\baselineskip}[0in][0in]{#1}}
      \def\midbox#1{\raisebox{-0.5\baselineskip}[0in][0in]{#1}}
 
-\vspace{3cm}
+%\vspace{3cm}
 
 
 \title{ASSIGNMENT 12.11.3.6}
@@ -208,19 +203,25 @@ columns=fullflexible
 Equation of plane is given by,
 \begin{align}
 \vec{n}^\top \vec{x} = c\\
-\implies \myvec{1&1&-1\\6&4&-5\\-4&-2&3}^\top \vec{x}=\myvec{1\\1\\1}\\
-\implies \myvec{1&6&-4\\ 1&4&-2\\ -1&-5&3} \vec{x} = \myvec{1\\1\\1}\\
+\implies \myvec{1&1&-1\\6&4&-5\\-4&-2&3}^\top \vec{n}=\myvec{1\\1\\1}\\
+\implies \myvec{1&6&-4\\ 1&4&-2\\ -1&-5&3} \vec{n} = \myvec{1\\1\\1}
 \end{align}
 the augmented matrix is given by,
 \begin{align}
 \myvec{1&6&-4&\vrule&1\\1&4&-2&\vrule&1\\-1&-5&3&\vrule&1}\\
 \xleftrightarrow[R_3 \leftarrow R_3 + R_1]{R_2 \leftarrow R_2 - R_1}\\
-\myvec{1&6&-4&\vrule&1\\1&-2&2&\vrule&0\\0&1&-1&\vrule&0}\\
-\xleftrightarrow{R_3 \leftarrow 2R_3 + R_2}\\
-\myvec{1&6&-4&\vrule&1\\0&-2&2&\vrule&0\\0&0&0&\vrule&0}\\
+\myvec{1&6&-4&\vrule&1\\1&-2&2&\vrule&0\\0&1&-1&\vrule&2}\\
+\xleftrightarrow{R_2 \leftarrow \frac{-R_2}{2}} \\ 
+\myvec{1&6&-4&\vrule&1\\0&1&-1&\vrule&0\\0&1&-1&\vrule&2}\\
+\xleftrightarrow[{R_1 \leftarrow R_1 + 6R_2}] {R_3 \leftarrow R_3 - R_2}\\
+\myvec{1&0&2&\vrule&1\\0&1&-1&\vrule&0\\0&0&0&\vrule&2}\\
+\xleftrightarrow{R_3\leftarrow \frac{R_3}{2}} \\
+\myvec{1&0&2&\vrule&1\\0&1&-1&\vrule&0\\0&0&0&\vrule&1}\\ 
+\xleftrightarrow{R_1 \leftarrow R_1 - R_3}\\ 
+\myvec{1&0&2&\vrule&0\\0&1&-1&\vrule&0\\0&0&0&\vrule&1} 
 \end{align}
-Since, all the elements in one of the row is 0. Therefore, there will be no solution.
-This signifies that the given points are collinear.\\
+Since, all the elements in one of the row is 0. Therefore, there will be infinite solutions.
+This signifies that the given points are collinear.
 The direction vector of the line of collinear points will be,
 \begin{align}
 \vec{m}=\vec{B}-\vec{C} = \myvec{10\\6\\-8}
@@ -241,7 +242,7 @@ Equation of plane is given by,
 \begin{align}
 \vec{n}^\top \vec{x} = c\\
 \implies \myvec{1&1&0\\1&2&1\\-2&2&-1}^\top \vec{x}=\myvec{1\\1\\1}\\
-\implies \myvec{1&1&-2\\1&2&2\\0&1&-1} \vec{x}=\myvec{1\\1\\1}\\
+\implies \myvec{1&1&-2\\1&2&2\\0&1&-1} \vec{x}=\myvec{1\\1\\1}
 \end{align}
 the augmented matrix is given by,
 \begin{align}
