@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2023.1.3)  11 FEB 2023 19:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2023.1.3)  11 FEB 2023 19:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1414,10 +1414,6 @@ Package: chngcntr 2018/04/09 v1.1a change counter resetting
 Package chngcntr Info: \counterwithout already defined.
 (chngcntr)             Quitting chngcntr on input line 21.
 )
-
-LaTeX Warning: Unused global option(s):
-    [A4].
-
 (./9.10.5.11.aux)
 \openout1 = `9.10.5.11.aux'.
 
@@ -1577,91 +1573,81 @@ LaTeX Info: Redefining \nameref on input line 86.
 \c@lemma=\count378
 \c@example=\count379
 \c@rem=\count380
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 20
-2.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 16
+8.
 
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Trying to load font information for U+txmia on input line 2
-02.
+LaTeX Font Info:    Trying to load font information for U+txmia on input line 1
+68.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+txsya on input line 2
-02.
+LaTeX Font Info:    Trying to load font information for U+txsya on input line 1
+68.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+txsyb on input line 2
-02.
+LaTeX Font Info:    Trying to load font information for U+txsyb on input line 1
+68.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+txsyc on input line 2
-02.
+LaTeX Font Info:    Trying to load font information for U+txsyc on input line 1
+68.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 )
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 208.
-
-LaTeX Font Info:    Trying to load font information for TS1+txr on input line 2
-08.
-(/usr/share/texlive/texmf-dist/tex/latex/txfonts/ts1txr.fd
-File: ts1txr.fd 2000/12/15 v3.1
-)
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 208.
-
-Missing character: There is no ° in font txr!
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 208.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 208.
-
-Missing character: There is no ° in font txr!
-
-Overfull \hbox (62.95218pt too wide) detected at line 221
-[]
+(./tables/table_1.tex)
+Overfull \hbox (29.44032pt too wide) in paragraph at lines 7--203
+ [] 
  []
 
+<figs/Figure_1.png, id=39, 722.7pt x 478.4274pt>
+File: figs/Figure_1.png Graphic file (type png)
+<use figs/Figure_1.png>
+Package pdftex.def Info: figs/Figure_1.png  used on input line 209.
+(pdftex.def)             Requested size: 252.00041pt x 251.99576pt.
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
+ <./figs/Figure_1.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 213.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 213.
 
-]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 222.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 222.
- (./9.10.5.11.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 222.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 222.
+(./9.10.5.11.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 213.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 213.
 Package rerunfilecheck Info: File `9.10.5.11.out' has not changed.
-(rerunfilecheck)             Checksum: 872ABE65B1ED792BBEA39B37ED008FFC;44.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 222.
+(rerunfilecheck)             Checksum: 1210BCF5FEAE7A75A114051724EF25E7;85.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 213.
  ) 
 Here is how much of TeX's memory you used:
- 39769 strings out of 481239
- 901164 string characters out of 5920378
- 1292696 words of memory out of 5000000
- 54226 multiletter control sequences out of 15000+600000
- 590771 words of font info for 145 fonts, out of 8000000 for 9000
+ 39776 strings out of 481239
+ 901269 string characters out of 5920378
+ 1303779 words of memory out of 5000000
+ 54213 multiletter control sequences out of 15000+600000
+ 593154 words of font info for 148 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 60i,10n,91p,482b,315s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,16n,91p,482b,332s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/txfonts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/txfonts/txsya.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/
-utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on 9.10.5.11.pdf (1 page, 29907 bytes).
+e/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/txfonts/rtxsc.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/tx
+fonts/txex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsy.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/urw/times/utmri8a.pfb>
+Output written on 9.10.5.11.pdf (1 page, 93897 bytes).
 PDF statistics:
- 69 PDF objects out of 1000 (max. 8388607)
- 44 compressed objects within 1 object stream
- 6 named destinations out of 1000 (max. 500000)
- 117 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 108 PDF objects out of 1000 (max. 8388607)
+ 77 compressed objects within 1 object stream
+ 19 named destinations out of 1000 (max. 500000)
+ 130 words of extra memory for PDF output out of 10000 (max. 10000000)
 
