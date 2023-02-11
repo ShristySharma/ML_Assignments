@@ -207,20 +207,10 @@ columns=fullflexible
 \section{Solution for 1}
 Equation of plane is given by,
 \begin{align}
-\vec{n}^\top \vec{x} = c\\
-\implies \myvec{1&1&-1\\6&4&-5\\-4&-2&3}^\top \myvec{x\\y\\z}=\myvec{1\\1\\1}\\
-\implies \myvec{1&6&-4\\ 1&4&-2\\ -1&-5&3} \myvec{x\\y\\z} = \myvec{1\\1\\1}\\
+m^\top \vec{x} = c\\
+\implies \myvec{1&1&-1\\6&4&-5\\-4&-2&3}^\top \myvec{x\\y\\z}=\myvec{1\\-25\\9}\\
+\implies \myvec{1&6&-4\\ 1&4&-2\\ -1&-5&3} \myvec{x\\y\\z} = \myvec{1\\-25\\9}
 \end{align}
-the augmented matrix is given by,
-\begin{align}
-\myvec{1&6&-4&\vrule&1\\1&4&-2&\vrule&1\\-1&-5&3&\vrule&1}\\
-\xleftrightarrow[R_3 \leftarrow R_3 + R_1]{R_2 \leftarrow R_2 - R_1}\\
-\myvec{1&6&-4&\vrule&1\\1&-2&2&\vrule&0\\0&1&-1&\vrule&0}\\
-\xleftrightarrow{R_3 \leftarrow 2R_3 + R_2}\\
-\myvec{1&6&-4&\vrule&1\\0&-2&2&\vrule&0\\0&0&0&\vrule&0}\\
-\end{align}
-Since, all the elements in one of the row is 0. Therefore, there will be no solution.
-This signifies that the given points are collinear.
 \begin{figure}[h!]
   \centering
    \includegraphics[width=\columnwidth]{figs/collinear_points.png}
@@ -230,23 +220,9 @@ This signifies that the given points are collinear.
 \section{Solution for 2}
 Equation of plane is given by,
 \begin{align}
-\vec{n}^\top \vec{x} = c\\
-\implies \myvec{1&1&0\\1&2&1\\-2&2&-1}^\top \myvec{x\\y\\z}=\myvec{1\\1\\1}\\
-\implies \myvec{1&1&-2\\1&2&2\\0&1&-1} \myvec{x\\y\\z}=\myvec{1\\1\\1}\\
-\end{align}
-the augmented matrix is given by,
-\begin{align}
-\myvec{1&1&-2&\vrule&1\\1&2&-2&\vrule&1\\0&1&-1&\vrule&1}\\
-\xleftrightarrow[R_3 \leftarrow R_3 - R_2]{R_2 \leftarrow R_2 - R_1}\\
-\myvec{1&1&-2&\vrule&1\\0&1&4&\vrule&0\\0&0&-5&\vrule&1}\\
-\xleftrightarrow[R_1 \leftarrow 5R_1 - 2R_3]{R_2 \leftarrow 5R_2 + 4R_3}\\
-\myvec{5&5&0&\vrule&3\\0&5&0&\vrule&4\\0&0&-5&\vrule&1}\\
-\xleftrightarrow{R_1 \leftarrow R_1 - R_2}\\
-\myvec{5&0&0&\vrule&-1\\0&5&0&\vrule&4\\0&0&-5&\vrule&1}
-\end{align}
-Now, the equation of the plane will be,
-\begin{align}
-\myvec{5\\5\\-5} \vec{x} = \myvec{-1\\4\\1}
+m^\top \vec{x} = c\\
+\implies \myvec{1&1&0\\1&2&1\\-2&2&-1}^\top \myvec{x\\y\\z}=\myvec{0\\5\\-5}\\
+\implies \myvec{1&1&-2\\ 1&2&2\\ 0&1&-1} \myvec{x\\y\\z} = \myvec{0\\5\\-5}
 \end{align}
 \begin{figure}[h!]
   \centering
