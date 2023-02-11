@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2023.1.3)  11 FEB 2023 19:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2023.1.3)  12 FEB 2023 00:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1612,33 +1612,43 @@ Overfull \hbox (62.77075pt too wide) detected at line 200
  []$[]  \OML/txmi/m/it/11 ^^V[] \OT1/txr/m/n/11 = [] []$ []  
  []
 
+(./tables/table_1.tex)
 <figs/Figure_1.png, id=41, 462.528pt x 346.896pt>
 File: figs/Figure_1.png Graphic file (type png)
 <use figs/Figure_1.png>
-Package pdftex.def Info: figs/Figure_1.png  used on input line 220.
+Package pdftex.def Info: figs/Figure_1.png  used on input line 227.
 (pdftex.def)             Requested size: 252.0pt x 189.00427pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
- <./figs/Figure_1.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 224.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 224.
+] [2
 
-(./9.10.4.5.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 224.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 224.
+ <./figs/Figure_1.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 231.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 231.
+ (./9.10.4.5.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 231.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 231.
 Package rerunfilecheck Info: File `9.10.4.5.out' has not changed.
 (rerunfilecheck)             Checksum: 1210BCF5FEAE7A75A114051724EF25E7;85.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 224.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 231.
  ) 
 Here is how much of TeX's memory you used:
- 39789 strings out of 481239
- 901510 string characters out of 5920378
- 1304816 words of memory out of 5000000
- 54223 multiletter control sequences out of 15000+600000
+ 39798 strings out of 481239
+ 901624 string characters out of 5920378
+ 1304815 words of memory out of 5000000
+ 54226 multiletter control sequences out of 15000+600000
  598048 words of font info for 156 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 60i,15n,91p,481b,315s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,16n,91p,481b,332s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type
@@ -1647,10 +1657,10 @@ fonts/txex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsy.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on 9.10.4.5.pdf (1 page, 73421 bytes).
+Output written on 9.10.4.5.pdf (2 pages, 77479 bytes).
 PDF statistics:
- 111 PDF objects out of 1000 (max. 8388607)
- 81 compressed objects within 1 object stream
- 24 named destinations out of 1000 (max. 500000)
+ 117 PDF objects out of 1000 (max. 8388607)
+ 86 compressed objects within 1 object stream
+ 26 named destinations out of 1000 (max. 500000)
  130 words of extra memory for PDF output out of 10000 (max. 10000000)
 
