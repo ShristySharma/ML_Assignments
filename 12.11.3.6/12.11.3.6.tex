@@ -240,15 +240,29 @@ Since,the equation of a line is given by,
 \section{Solution for 2}
 Equation of plane is given by,
 \begin{align}
-\vec{n}^\top \vec{x} = c\\
-\implies \myvec{1&1&0\\1&2&1\\-2&2&-1}^\top \vec{x}=\myvec{1\\1\\1}\\
-\implies \myvec{1&1&-2\\1&2&2\\0&1&-1} \vec{x}=\myvec{1\\1\\1}
+\vec{n}^\top \vec{x} = 1\\
+\vec{x}^\top \vec{n}=1
+\end{align}
+Since, $\vec{A}, \vec{B}, \vec{C}$ satisfies this.
+\begin{align}
+\vec{A}^\top \vec{n}=1\\
+%\implies \myvec{1\\1\\0} ^\top \vec{n}=1\\
+  \vec{B}^\top \vec{n}=1\\
+%\implies \myvec{1\\2\\1} ^\top \vec{n}=1\\
+ \vec{C}^\top \vec{n}=1\\
+%\implies \myvec{– 2\\2\\-1} ^\top \vec{n}=1\\
+\implies \myvec{A^\top\\B^\top\\C^\top}  \vec{n} = 1\\
+\implies \myvec{A&B&C}^\top\vec{n}=1\\
+\implies \myvec{1&1&0 \\ 1&2&1 \\ -2&2&-1} ^\top \vec{n}=1\\
+\implies \myvec{1&1&-2\\1&2&2\\0&1&-1}\vec{n}=1
 \end{align}
 the augmented matrix is given by,
 \begin{align}
-\myvec{1&1&-2&\vrule&1\\1&2&-2&\vrule&1\\0&1&-1&\vrule&1}\\
+\myvec{1&1&-2&\vrule&1\\1&2&2&\vrule&1\\0&1&-1&\vrule&1}\\
 \xleftrightarrow[R_3 \leftarrow R_3 - R_2]{R_2 \leftarrow R_2 - R_1}\\
-\myvec{1&1&-2&\vrule&1\\0&1&4&\vrule&0\\0&0&-5&\vrule&1}\\
+\myvec{1&1&-2&\vrule&1\\0&1&4&\vrule&0\\0&0&-5&\vrule&1}
+\end{align}
+\begin{align}
 \xleftrightarrow[R_1 \leftarrow 5R_1 - 2R_3]{R_2 \leftarrow 5R_2 + 4R_3}\\
 \myvec{5&5&0&\vrule&3\\0&5&0&\vrule&4\\0&0&-5&\vrule&1}\\
 \xleftrightarrow{R_1 \leftarrow R_1 - R_2}\\
