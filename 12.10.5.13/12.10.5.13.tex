@@ -201,29 +201,30 @@ columns=fullflexible
 \section{SOLUTION:}
 Let,
 \begin{align}
-\vec{a}=\myvec{1\\1\\1}\ ; \vec{b}=\myvec{2\\4\\-5}\ ;\vec{c}=\myvec{0\\2\\3}; \vec{d}=\myvec{1\\0\\0}\\
+\vec{a}=\myvec{1\\1\\1}\ ; \vec{b}=\myvec{2\\4\\-5}\ ;\vec{c}=\myvec{0\\2\\3}; \vec{d}=\myvec{1\\0\\0}
 \end{align}
 According to the question,
 \begin{align}
-\frac{\vec{a}^\top \brak {\vec{b}+\vec{c} + \lambda\vec{d}}} {\norm{\vec{b}+\vec{c}+\lambda\vec{d}}}=1\\
-\norm{\vec{b}+\vec{c}+\lambda\vec{d}} &=\norm{\myvec{2+\lambda\\6\\-2}}  \\
-&=\sqrt{(2+\lambda)^2 + 6^2 + 2^2}\\
-&= \sqrt{(2^2+2\times2\times\lambda+\lambda^2) + 36 + 4} \\
-&= \sqrt{ \lambda^2 + 4\lambda + 44} \\
-\text{and},\vec{a}^\top \brak {\vec{b}+\vec{c}+\lambda\vec{d}}&= \myvec{1&1&1}\myvec{2+\lambda\\6\\-2}\\
-&= 2+ \lambda + 6 - 2\\ &= 6 + \lambda
+\frac{\vec{a}^\top \brak {\vec{b}+\vec{c} + \lambda\vec{d}}} {\norm{\vec{b}+\vec{c}+\lambda\vec{d}}}=1
 \end{align}
-Substituting 2.0.7 and 2.0.10 in 2.0.3, we get
+squaring both sides we get,
 \begin{align}
-\frac{\lambda +6}{\sqrt{ \lambda^2 + 4\lambda + 44}}=1\\
-\implies \lambda +6 = \sqrt{ \lambda^2 + 4\lambda + 44}
+\brak{\frac{\vec{a}^\top \brak {\vec{b}+\vec{c} + \lambda\vec{d}}} {\norm{\vec{b}+\vec{c}+\lambda\vec{d}}}}^2=1\\
+\brak{\norm{\vec{b}+\vec{c}+\lambda\vec{d}}}^2 &=\brak{\norm{\myvec{2+\lambda\\6\\-2}}}^2 \\
+&=(2+\lambda)^2 + 6^2 + 2^2\\
+&= 2^2+2\times2\times\lambda+\lambda^2 + 36 + 4 \\
+&= \lambda^2 + 4\lambda + 44\\
+\text{and},\brak{\vec{a}^\top \brak {\vec{b}+\vec{c}+\lambda\vec{d}}}^2&= \brak{\myvec{1&1&1}\myvec{2+\lambda\\6\\-2}}^2\\
+&= \brak{2+ \lambda + 6 - 2}^2\\ &=\brak{ 6 + \lambda}^2\\
+&= 36+ 12\lambda+ \lambda^2
 \end{align}
-squaring both sides, we get,
+Substituting 2.0.7 and 2.0.11 in 2.0.3, we get
 \begin{align}
-\implies (\lambda +6)^2 = \lambda^2 + 4\lambda + 44\\
-\implies \lambda^2 +12\lambda +36 = \lambda^2 + 4\lambda + 44\\
+\frac{\lambda^2 + 12\lambda + 36}{\lambda^2 + 4\lambda + 44} =1\\
+\implies \lambda^2 + 12\lambda + 36= \lambda^2 + 4\lambda + 44\\
+\implies \lambda^2 - \lambda^2 + 12\lambda - 4\lambda= 44-36\\
 \implies 8\lambda = 8\\
-\implies \lambda = 1
+\implies \lambda =1 
 \end{align}
 \end{document}
 
