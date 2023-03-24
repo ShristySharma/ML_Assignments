@@ -1,12 +1,23 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from mpl_toolkits.mplot3d import Axes3D
-import sys
-sys.path.insert(0,'/home/shri/CoordGeo')
+from mpl_toolkits.mplot3d import Axes3D 
+from sympy import *   
 
-from line.funcs import *
-from triangle.funcs import *
-from conics.funcs import *
+#Generate line points
+def line_gen(A,B):
+  len =10
+  dim = A.shape[0]
+  x_AB = np.zeros((dim,len))
+  lam_1 = np.linspace(0,1,len)
+  for i in range(len):
+    temp1 = A + lam_1[i]*(B-A)
+    x_AB[:,i]= temp1.T
+  return x_AB
+
+M = Matrix([[1, 1, -1, 1], [6, 4, -5, 1], [-4, -2, 3, 1]])
+print("Matrix : {} ".format(M))
+M_rref = M.rref()       
+print("The Row echelon form of matrix M and the pivot columns : {}".format(M_rref)) 
 
 A= np.array([1,1,-1])
 B= np.array([6,4,-5])

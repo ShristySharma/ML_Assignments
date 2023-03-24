@@ -1,30 +1,17 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
-
+from sympy import *
+M = Matrix([[1, 1, -2, 1], [1, 2, 2, 1], [0, 1, -1, 1]])
+print("Matrix : {} ".format(M))
+M_rref = M.rref()
+print("The Row echelon form of matrix M and the pivot columns : {}".format(M_rref)) 
+print( f"( {M_rref[0][0,3]} {M_rref[0][1,3]} {M_rref[0][2,3]} ) x  = 1")
 
 A= np.array([1,1,0])
 B= np.array([1,2,1])
 C= np.array([-2,2,-1])
 
-
-# Calculate the normal vector of the plane
-v1 = C - A
-v2 = B - A
-normal = np.cross(v1, v2)
-
-
-
-# Define the coefficients matrix and the constants vector
-a1 = np.array([[1, 1,-2], [1, 2,2],[0,1,-1]])
-a2 = np.array([1, 1,1])
-
-# Solve the system of linear equations
-X = np.linalg.solve(a1, a2)
-# Print the solution vector
-print(X)
-print('the equation of the plane is given by: ' )
-print("{}x  = 1".format(X))
 # Define the plane function
 def plane(x, y):
     return (-normal[0] * x - normal[1] * y - np.dot(normal, A)) * 1. / normal[2]
