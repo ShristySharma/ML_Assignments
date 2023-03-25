@@ -1,13 +1,18 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
-from sympy import *
-M = Matrix([[1, 1, -2, 1], [1, 2, 2, 1], [0, 1, -1, 1]])
-print("Matrix : {} ".format(M))
-M_rref = M.rref()
-print("The Row echelon form of matrix M and the pivot columns : {}".format(M_rref)) 
-print( f"( {M_rref[0][0,3]} {M_rref[0][1,3]} {M_rref[0][2,3]} ) x  = 1")
 
+M = np.array([[1, 1, -2, 1], [1, 2, 2, 1], [0, 1, -1, 1]])
+solution = np.linalg.solve(M[:, :-1], M[:, -1])
+
+# Multiply the solution by 5
+solution *= 5
+
+# Round the solution to the nearest integer
+solution = np.round(solution)
+# Convert the solution to integers
+solution = solution.astype(int)
+print('{}x={}'.format(solution, 1))
 A= np.array([1,1,0])
 B= np.array([1,2,1])
 C= np.array([-2,2,-1])

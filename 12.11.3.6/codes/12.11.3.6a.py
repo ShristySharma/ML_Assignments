@@ -1,8 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D 
-from sympy import *   
-
 #Generate line points
 def line_gen(A,B):
   len =10
@@ -14,10 +12,13 @@ def line_gen(A,B):
     x_AB[:,i]= temp1.T
   return x_AB
 
-M = Matrix([[1, 1, -1, 1], [6, 4, -5, 1], [-4, -2, 3, 1]])
-print("Matrix : {} ".format(M))
-M_rref = M.rref()       
-print("The Row echelon form of matrix M and the pivot columns : {}".format(M_rref)) 
+M = np.array([[1, 6, -4, 1], [1, 4, -2, 1], [-1, -5, 3, 1]])
+
+if np.linalg.matrix_rank(M[:, :-1]) < np.linalg.matrix_rank(M):
+    print("The system has no solution.")
+else:
+   solution = np.linalg.solve(M[:, :-1], M[:, -1])
+   print('{}x={}'.format(solution, 1)) 
 
 A= np.array([1,1,-1])
 B= np.array([6,4,-5])
