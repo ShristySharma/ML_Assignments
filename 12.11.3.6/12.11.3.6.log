@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2023.1.3)  27 MAR 2023 23:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2023.1.3)  28 MAR 2023 00:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1625,7 +1625,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 ]
-<figs/collinear_points.png, id=69, 462.528pt x 346.896pt>
+<figs/collinear_points.png, id=68, 462.528pt x 346.896pt>
 File: figs/collinear_points.png Graphic file (type png)
 <use figs/collinear_points.png>
 Package pdftex.def Info: figs/collinear_points.png  used on input line 232.
@@ -1637,7 +1637,7 @@ Underfull \vbox (badness 7777) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [2 <./figs/collinear_points.png>]
-<figs/plane_b.png, id=92, 462.528pt x 346.896pt>
+<figs/plane_b.png, id=91, 462.528pt x 346.896pt>
 File: figs/plane_b.png Graphic file (type png)
 <use figs/plane_b.png>
 Package pdftex.def Info: figs/plane_b.png  used on input line 281.
@@ -1657,9 +1657,9 @@ Package rerunfilecheck Info: File `12.11.3.6.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 285.
  ) 
 Here is how much of TeX's memory you used:
- 39825 strings out of 481239
- 901969 string characters out of 5920378
- 1316871 words of memory out of 5000000
+ 39824 strings out of 481239
+ 901954 string characters out of 5920378
+ 1316869 words of memory out of 5000000
  54232 multiletter control sequences out of 15000+600000
  600350 words of font info for 160 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
@@ -1672,10 +1672,10 @@ fonts/txex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsy.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on 12.11.3.6.pdf (3 pages, 135064 bytes).
+Output written on 12.11.3.6.pdf (3 pages, 135042 bytes).
 PDF statistics:
- 150 PDF objects out of 1000 (max. 8388607)
- 115 compressed objects within 2 object streams
- 47 named destinations out of 1000 (max. 500000)
+ 149 PDF objects out of 1000 (max. 8388607)
+ 114 compressed objects within 2 object streams
+ 46 named destinations out of 1000 (max. 500000)
  143 words of extra memory for PDF output out of 10000 (max. 10000000)
 
