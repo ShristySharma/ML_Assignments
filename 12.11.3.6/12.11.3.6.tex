@@ -203,22 +203,18 @@ columns=fullflexible
 Equation of plane is given by,
 \begin{align}
 \vec{n}^\top \vec{x} = c\\
-\implies \myvec{1&1&-1\\6&4&-5\\-4&-2&3}^\top \vec{n}=\myvec{1\\1\\1}\\
-\implies \myvec{1&6&-4\\ 1&4&-2\\ -1&-5&3} \vec{n} = \myvec{1\\1\\1}
+\implies \myvec{1&6&-4\\1&4&-2\\-1&-5&3}^\top \vec{n}=\myvec{1\\1\\1}\\
+\implies \myvec{1&1&-1\\ 6&4&-5\\ -4&-2&3} \vec{n} = \myvec{1\\1\\1}
 \end{align}
 the augmented matrix is given by,
 \begin{align}
-\myvec{1&6&-4&\vrule&1\\1&4&-2&\vrule&1\\-1&-5&3&\vrule&1}\\
-\xleftrightarrow[R_3 \leftarrow R_3 + R_1]{R_2 \leftarrow R_2 - R_1}\\
-\myvec{1&6&-4&\vrule&1\\1&-2&2&\vrule&0\\0&1&-1&\vrule&2}\\
+\myvec{1&1&-1&\vrule&1\\6&4&-5&\vrule&1\\-4&-2&3&\vrule&1}\\
+\xleftrightarrow[R_3 \leftarrow R_3 + 4R_1]{R_2 \leftarrow R_2 - 6R_1}\\
+\myvec{1&1&-1&\vrule&1\\0&-2&1&\vrule&-5\\0&2&-1&\vrule&5}\\
 \xleftrightarrow{R_2 \leftarrow \frac{-R_2}{2}} \\ 
-\myvec{1&6&-4&\vrule&1\\0&1&-1&\vrule&0\\0&1&-1&\vrule&2}\\
-\xleftrightarrow[{R_1 \leftarrow R_1 + 6R_2}] {R_3 \leftarrow R_3 - R_2}\\
-\myvec{1&0&2&\vrule&1\\0&1&-1&\vrule&0\\0&0&0&\vrule&2}\\
-\xleftrightarrow{R_3\leftarrow \frac{R_3}{2}} \\
-\myvec{1&0&2&\vrule&1\\0&1&-1&\vrule&0\\0&0&0&\vrule&1}\\ 
-\xleftrightarrow{R_1 \leftarrow R_1 - R_3}\\ 
-\myvec{1&0&2&\vrule&0\\0&1&-1&\vrule&0\\0&0&0&\vrule&1} 
+\myvec{1&1&-1&\vrule&1\\0&1&\frac{-1}{2}&\vrule&\frac{5}{2}\\0&2&-1&\vrule&5}\\
+\xleftrightarrow[{R_1 \leftarrow R_1 - R_2}] {R_3 \leftarrow R_3 - 2R_2}\\
+\myvec{1&0&\frac{-1}{2}&\vrule&\frac{-3}{2}\\0&1&\frac{-1}{2}&\vrule&\frac{5}{2}\\0&0&0&\vrule&0}\\
 \end{align}
 Since, all the elements in one of the row is 0. Therefore, there will be no solutions.
 This signifies that the given points are collinear.
@@ -253,30 +249,32 @@ Since, $\vec{A}, \vec{B}, \vec{C}$ satisfies this.
 %\implies \myvec{– 2\\2\\-1} ^\top \vec{n}=1\\
 \implies \myvec{A^\top\\B^\top\\C^\top}  \vec{n} = \vec{1}\\
 \implies \myvec{A&B&C}^\top\vec{n}=\vec{1}\\
-\implies \myvec{1&1&0 \\ 1&2&1 \\ -2&2&-1} ^\top \vec{n}=\vec{1}\\
-\implies \myvec{1&1&-2\\1&2&2\\0&1&-1}\vec{n}=\vec{1}
+\implies \myvec{1&1&-2\\1&2&2\\0&1&-1}^\top \vec{n}=\vec{1}\\
+\implies \myvec{1&1&0 \\ 1&2&1 \\ -2&2&-1} \vec{n}=\vec{1}
 \end{align}
 the augmented matrix is given by,
 \begin{align}
-\myvec{1&1&-2&\vrule&1\\1&2&2&\vrule&1\\0&1&-1&\vrule&1}\\
-\xleftrightarrow[R_3 \leftarrow R_3 - R_2]{R_2 \leftarrow R_2 - R_1}\\
-\myvec{1&1&-2&\vrule&1\\0&1&4&\vrule&0\\0&0&-5&\vrule&1}
+\myvec{1&1&0&\vrule&1\\1&2&1&\vrule&1\\-2&2&-1&\vrule&1}\\
+\xleftrightarrow[R_3 \leftarrow R_3 + 2R_1]{R_2 \leftarrow R_2 - R_1}\\
+\myvec{1&1&0&\vrule&1\\0&1&1&\vrule&0\\0&4&-1&\vrule&3}
 \end{align}
 \begin{align}
-\xleftrightarrow[R_1 \leftarrow 5R_1 - 2R_3]{R_2 \leftarrow 5R_2 + 4R_3}\\
-\myvec{5&5&0&\vrule&3\\0&5&0&\vrule&4\\0&0&-5&\vrule&1}\\
-\xleftrightarrow{R_1 \leftarrow R_1 - R_2}\\
-\myvec{5&0&0&\vrule&-1\\0&5&0&\vrule&4\\0&0&-5&\vrule&1}\\
-{R_1 \leftarrow \frac{R_1}{5}} ; {R_2 \leftarrow \frac{R_1}{5}}; {R_3 \leftarrow \frac{-R_3}{5}}\\
-\myvec{1&0&0&\vrule&\frac{-1}{5}  \\ 0&1&0&\vrule&\frac{4}{5} \\0&0&1&\vrule&\frac{-1}{5}}
+\xleftrightarrow{R_1 \leftarrow R_1- R_2}\\
+\myvec{1&0&-1&\vrule&1\\0&1&1&\vrule&0\\0&4&-1&\vrule&3}\\
+\xleftrightarrow{R_3 \leftarrow R_3 - 4R_2}\\
+\myvec{1&0&-1&\vrule&1\\0&1&1&\vrule&0\\0&0&-5&\vrule&3}\\
+\xleftrightarrow{R_3 \leftarrow \frac{- R_3}{5}}\\
+\myvec{1&0&-1&\vrule&1\\0&1&1&\vrule&0\\0&0&1&\vrule&\frac{-3}{5}}\\
+\xleftrightarrow[R_1 \leftarrow R_1 + R_3]{R_2 \leftarrow R_2 - R_3}\\
+\myvec{1&0&0& \vrule& \frac{2}{5}  \\ 0&1&0& \vrule& \frac{3}{5} \\ 0&0&1& \vrule& \frac{-3}{5}}
 \end{align}
 Now, the equation of the plane will be,
 \begin{align}
-\myvec{\frac{-1}{5} & \frac{4}{5} & \frac{-1}{5}} \vec{x} = 1
+\myvec{\frac{2}{5} & \frac{3}{5} & \frac{-3}{5}} \vec{x} = 1
 \end{align}
 multiplying both sides by 5, we get,
 \begin{align}
-\myvec{-1 & 4 & -1 }\vec{x} = 5
+\myvec{2 & 3 & -3} \vec{x} = 5
 \end{align}
 \begin{figure}[h!]
   \centering

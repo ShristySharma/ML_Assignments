@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 
-M = np.array([[1, 1, -2, 1], [1, 2, 2, 1], [0, 1, -1, 1]])
+M = np.array([[1, 1, 0, 1], [1, 2, 1, 1], [-2, 2, -1, 1]])
 solution = np.linalg.solve(M[:, :-1], M[:, -1])
 
 # Multiply the solution by 5
