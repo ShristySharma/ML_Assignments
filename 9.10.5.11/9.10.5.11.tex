@@ -171,46 +171,29 @@ We will use vectors to prove that $\angle CAD = \angle CBD$. \\
 Let's assume that A, B, C, and D are the vertices of the two right triangles.\\
 We can represent the position vectors of points A, B, C, and D as $\vec{a}, \vec{b}, \vec{c}, and \vec{d},$ respectively. Then we have:
 \begin{align}
-\vec{AB} &= \vec{b} - \vec{a}\\
-\vec{AC} &= \vec{c} - \vec{a}\\
-\vec{CD} &= \vec{d} - \vec{c}
+AB &= \vec{b} - \vec{a}\\
+AC &= \vec{c} - \vec{a}\\
+CD &= \vec{d} - \vec{c}
 \end{align}
 Since ABC and ADC are right triangles, we know that:
 \begin{align}
-\vec{AB} \cdot \vec{AC} &= 0 \\
-\vec{CD} \cdot \vec{AC} &= 0 
+AB \cdot AC &= 0 \\
+CD \cdot AC &= 0 
 \end{align}
-Taking the dot product of (2.0.4) with (2.0.5), we get:
+substituting 2.0.1 and 2.0.3 in 2.0.5
 \begin{align}
-\vec{AB} \cdot \vec{AC} \cdot \vec{CD} \cdot \vec{AC} &= 0\\
-\vec{AB} \cdot \vec{AC} \cdot (\vec{d} - \vec{c}) \cdot \vec{AC} &= 0\\
-(\vec{AB} \cdot \vec{AC}) \vec{d} \cdot \vec{AC} - (\vec{AB} \cdot \vec{AC})\vec{c} \cdot \vec{AC} &= 0
+CD \cdot AC = 0\\
+\brak {\vec{d} - \vec{c}}\cdot AC &= 0\\
+\vec{d} \cdot AC - \vec{c} \cdot AC &= 0
 \end{align}
 Since AC is non-zero, we can divide both sides by $\norm {\vec{AC}}^2$ to get:
 \begin{align}
-\brak{\vec{AB} \cdot \vec{AC}} \brak{ \frac{\vec{d} \cdot \vec{AC}} {\norm {\vec{AC}}^2 } }- \brak{\vec{AB} \cdot \vec{AC} }\brak{\frac{\vec{c} \cdot \vec{AC}} {\norm {\vec{AC}}^2 } } = 0
+\brak{ \frac{\vec{d} \cdot AC} {\norm {AC}^2 } }- \brak{\frac{\vec{c} \cdot AC} {\norm {AC}^2 } } = 0
 \end{align}
-But $\frac { \vec{d} \cdot \vec{AC}} {\norm {\vec{AC}}^2} = \cos \angle CAD $ and $\frac{\vec{c} \cdot \vec{AC}} {\norm {\vec{AC}}^2}= \cos \angle CBD$. Therefore, we have:
+But $\frac { \vec{d} \cdot AC} {\norm {AC}^2} = \cos \angle CAD $ and $\frac{\vec{c} \cdot AC} {\norm {AC}^2}= \cos \angle CBD$. Therefore, we have:
 \begin{align}
-\brak{\vec{AB} \cdot \vec{AC}}\cos\angle CAD - \brak{\vec{AB} \cdot \vec{AC}}\cos\angle CBD &= 0\\
-\brak{\vec{AB} \cdot \vec{AC}} \brak{\cos\angle CAD - \cos\angle CBD} &= 0\\
-\vec{AB} \cdot \vec{AC} &= 0
-\end{align}
-Since $\vec{AB}$ and $\vec{AC}$ are non-zero and $\cos\angle CAD - \cos \angle CBD$ cannot be zero, we conclude that $\vec{AB} . \vec{AC}$ must be zero. Therefore, we have:
-\begin{align}
-\brak{\vec{b} - \vec{a}} \cdot \brak{\vec{c} - \vec{a}} &= 0
-\end{align}
-Since AB and AC are orthogonal, and CD and AC are also orthogonal, we can conclude that AB and CD are parallel:
-\begin{align}
-\vec{AB} \perp \vec{AC}\\
-\vec{CD} \cdot \vec{AC} &= (\vec{d} - \vec{c}) \cdot (\vec{c} - \vec{a}) = 0\\
-\vec{CD} \perp \vec{AC}\\
-\vec{AB} \times \vec{AC} &= (\vec{b} - \vec{a}) \times (\vec{c} - \vec{a}) = 0\\
-\vec{CD} \times \vec{AC} &= (\vec{d} - \vec{c}) \times (\vec{c} - \vec{a}) = 0
-\end{align}
-Therefore, the two right triangles ABC and ADC are similar, and we have:
-\begin{align}
-\angle CAD &= \angle ACD = \angle CBD\
+\cos\angle CAD - \cos\angle CBD &= 0\\
+\implies  \angle CAD = \angle CBD
 \end{align}
 \begin{figure}[h!]
   \centering
