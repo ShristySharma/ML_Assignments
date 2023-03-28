@@ -167,47 +167,55 @@ columns=fullflexible
 ABC and ADC are two right triangles with common hypotenuse AC. Prove that
 $\angle CAD$ = $\angle CBD$.
 \section{Solution}
-Consider $\triangle ABC$ such that
+We will use vectors to prove that $\angle CAD = \angle CBD$. \\
+Let's assume that A, B, C, and D are the vertices of the two right triangles.\\
+We can represent the position vectors of points A, B, C, and D as $\vec{a}, \vec{b}, \vec{c}, and \vec{d},$ respectively. Then we have:
 \begin{align}
-\vec{A} = \myvec{-a\\0} \\
-\vec{C} = \myvec{a \\ 0} 
+\vec{AB} &= \vec{b} - \vec{a}\\
+\vec{AC} &= \vec{c} - \vec{a}\\
+\vec{CD} &= \vec{d} - \vec{c}
 \end{align}
-Since,both the triangles ($\triangle{ABC} $ and $\triangle{ADC}$) are right angled.\\
-Therefore, it can be said that $\vec{B}$ and $\vec{D}$ lie on circle having $\vec{A}$ and $\vec{C}$ as its diametric end-points.\\
-Equation of this circle is given by:
+Since ABC and ADC are right triangles, we know that:
 \begin{align}
-\norm{\vec{x}-\brak{\frac{\vec{A}+\vec{C}}{2}}}^2 &= \norm{ \frac{\vec{A} -\vec{C}}{2}}^2 \\
-\norm{\vec{x}}^2 = a^2
+\vec{AB} \cdot \vec{AC} &= 0 \\
+\vec{CD} \cdot \vec{AC} &= 0 
 \end{align}
-Points on this circle can be represented as
+Taking the dot product of (2.0.4) with (2.0.5), we get:
 \begin{align}
-\vec{x} = a\myvec{\cos{\theta}\\\sin{\theta}}
+\vec{AB} \cdot \vec{AC} \cdot \vec{CD} \cdot \vec{AC} &= 0\\
+\vec{AB} \cdot \vec{AC} \cdot (\vec{d} - \vec{c}) \cdot \vec{AC} &= 0\\
+(\vec{AB} \cdot \vec{AC}) \vec{d} \cdot \vec{AC} - (\vec{AB} \cdot \vec{AC})\vec{c} \cdot \vec{AC} &= 0
 \end{align}
-Let
+Since AC is non-zero, we can divide both sides by $\norm {\vec{AC}}^2$ to get:
 \begin{align}
-\vec{B} &= a\myvec{\cos{\theta_1}\\\sin{\theta_1}}\\
-\vec{D} &= a\myvec{\cos{\theta_2}\\\sin{\theta_2}}
+\brak{\vec{AB} \cdot \vec{AC}} \brak{ \frac{\vec{d} \cdot \vec{AC}} {\norm {\vec{AC}}^2 } }- \brak{\vec{AB} \cdot \vec{AC} }\brak{\frac{\vec{c} \cdot \vec{AC}} {\norm {\vec{AC}}^2 } } = 0
 \end{align}
+But $\frac { \vec{d} \cdot \vec{AC}} {\norm {\vec{AC}}^2} = \cos \angle CAD $ and $\frac{\vec{c} \cdot \vec{AC}} {\norm {\vec{AC}}^2}= \cos \angle CBD$. Therefore, we have:
 \begin{align}
-\cos{\angle{CAD}} &= \frac{ \brak{\vec{C}-\vec{A}}^{\top} \brak{ \vec{D} -\vec{A}} }{\norm{ \vec{C} - \vec{A}} \norm{\vec{D} - \vec{A}}} \\&= \sqrt{1+ \cos{\theta_1}}
+\brak{\vec{AB} \cdot \vec{AC}}\cos\angle CAD - \brak{\vec{AB} \cdot \vec{AC}}\cos\angle CBD &= 0\\
+\brak{\vec{AB} \cdot \vec{AC}} \brak{\cos\angle CAD - \cos\angle CBD} &= 0\\
+\vec{AB} \cdot \vec{AC} &= 0
 \end{align}
+Since $\vec{AB}$ and $\vec{AC}$ are non-zero and $\cos\angle CAD - \cos \angle CBD$ cannot be zero, we conclude that $\vec{AB} . \vec{AC}$ must be zero. Therefore, we have:
 \begin{align}
-\cos{\angle{CBD}} &= \frac{ \brak{\vec{C}-\vec{B}}^{\top} \brak{ \vec{D} -\vec{B}} }{\norm{ \vec{C} - \vec{B}} \norm{\vec{D} - \vec{B}}}\\ &= \sqrt{1+ \cos{\theta_1}}
+\brak{\vec{b} - \vec{a}} \cdot \brak{\vec{c} - \vec{a}} &= 0
 \end{align}
+Since AB and AC are orthogonal, and CD and AC are also orthogonal, we can conclude that AB and CD are parallel:
 \begin{align}
-\implies\;\; \angle{CAD} = \angle{CBD}
+\vec{AB} \perp \vec{AC}\\
+\vec{CD} \cdot \vec{AC} &= (\vec{d} - \vec{c}) \cdot (\vec{c} - \vec{a}) = 0\\
+\vec{CD} \perp \vec{AC}\\
+\vec{AB} \times \vec{AC} &= (\vec{b} - \vec{a}) \times (\vec{c} - \vec{a}) = 0\\
+\vec{CD} \times \vec{AC} &= (\vec{d} - \vec{c}) \times (\vec{c} - \vec{a}) = 0
 \end{align}
-\begin{table}[h!]
-\begin{center}
-\input{tables/table_1.tex}
-\end{center}
-\caption{Table1}
-\label{tab:}
-\end{table}
+Therefore, the two right triangles ABC and ADC are similar, and we have:
+\begin{align}
+\angle CAD &= \angle ACD = \angle CBD\
+\end{align}
 \begin{figure}[h!]
-\centering
-\includegraphics[width=\columnwidth,height = \columnwidth]{figs/Figure_1.png}
-\caption{Figure 1}
-\label{fig:}
+  \centering
+   \includegraphics[width=\columnwidth]{figs/fig_1.png}
+    \caption{Plot of $ABCD$}
+     \label{fig:1}  
 \end{figure}
 \end{document}
